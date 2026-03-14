@@ -1,3 +1,4 @@
+import 'package:chef_app/core/routes/app_routes.dart';
 import 'package:chef_app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      initialRoute: Routes.initlRoute,
+     onGenerateRoute:AppRoutes.generateRoute ,
       theme: getAppLightTheme()
      
     );
